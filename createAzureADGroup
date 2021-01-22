@@ -1,0 +1,7 @@
+Install-Module -Name AzureAD
+New-AzureADGroup -Description "Marketing" -DisplayName "Marketing" '
+  -MailEnabled $false -SecurityEnabled $true -MailNickName "Marketing"
+  
+Add-AzureADGroupMember -ObjectId "62438306-7c37-xxx-xxxxxxxxxxxx" '
+  RefObjectId "0a1068c0-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+  
